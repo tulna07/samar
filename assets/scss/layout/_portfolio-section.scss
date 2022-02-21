@@ -43,28 +43,10 @@
       left: -60rem;
     }
 
-    &--1 {
-      grid-area: item-1;
-    }
-
-    &--2 {
-      grid-area: item-2;
-    }
-
-    &--3 {
-      grid-area: item-3;
-    }
-
-    &--4 {
-      grid-area: item-4;
-    }
-
-    &--5 {
-      grid-area: item-5;
-    }
-
-    &--6 {
-      grid-area: item-6;
+    @for $i from 1 through 6 {
+      &--#{$i} {
+        grid-area: item-#{$i};
+      }
     }
 
     &__img {
