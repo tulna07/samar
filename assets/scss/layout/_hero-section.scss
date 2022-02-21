@@ -1,0 +1,94 @@
+/** 
+  * Hero Section 
+  * ============================
+  */
+.hero {
+  padding-top: 18rem;
+  background: url("../images/pic2.png") top / 100% no-repeat;
+
+  overflow: hidden;
+
+  &-content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    column-gap: 4.5rem;
+  }
+
+  .section-headings {
+    margin-bottom: 2rem;
+
+    .subheading {
+      margin-bottom: 2rem;
+      text-transform: none;
+    }
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    margin-bottom: 2rem;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+
+      &__icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+
+        position: relative;
+
+        &::before {
+          color: #fff;
+          font-size: 1.5rem;
+
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      &__text {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &-img-box {
+    position: relative;
+  }
+
+  &-animate-img-box {
+    position: absolute;
+    top: 0;
+    left: -12rem;
+    z-index: 1;
+
+    animation: moveAnimatedImg 5s infinite;
+  }
+}
+
+@keyframes moveAnimatedImg {
+  0% {
+    transform: rotate(-1deg);
+  }
+
+  50% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(-1deg);
+  }
+}

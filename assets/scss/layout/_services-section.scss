@@ -1,0 +1,47 @@
+/** 
+  * Services Section 
+  * ============================
+  */
+.services {
+  padding-top: 11.5rem;
+  background: url("../images/bg2.png") top center / cover no-repeat;
+  text-align: center;
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+  }
+
+  &-item {
+    padding: 3rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 6rem 0 rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.8s;
+
+    &__img {
+      display: block;
+      width: 69.5%;
+      margin-bottom: 2.5rem;
+
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__title {
+      font: {
+        size: 2.5rem;
+        weight: 700;
+      }
+      margin-bottom: 1.5rem;
+      color: #262626;
+    }
+
+    &:hover {
+      transform: translateY(-1.5rem);
+    }
+  }
+}

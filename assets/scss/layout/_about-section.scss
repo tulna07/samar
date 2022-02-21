@@ -1,0 +1,74 @@
+/** 
+  * About Section 
+  * ============================
+  */
+.about {
+  padding: 11.5rem 0;
+  background: url("../../assets/images/bg15.png") center right / contain
+    no-repeat;
+
+  .section-headings {
+    margin-bottom: 2rem;
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  &-img-box {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 10rem;
+      background-color: #fef2f6;
+
+      position: absolute;
+      top: 0;
+      left: -9rem;
+
+      transform: rotate(8deg);
+    }
+  }
+
+  &__img {
+    width: 105%;
+    border-radius: 10rem;
+
+    position: relative;
+    left: -14rem;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+  }
+
+  &-list {
+    margin-bottom: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    i {
+      font-size: 2.4rem;
+      color: $primary-color;
+    }
+
+    span {
+      font-size: 1.5rem;
+    }
+  }
+}

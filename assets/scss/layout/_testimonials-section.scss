@@ -1,0 +1,156 @@
+/** 
+  * Testimonials Section
+  * ============================
+  */
+.testimonials {
+  padding-top: 11.5rem;
+  background: url("../../assets/images/bg17.png") center/ contain no-repeat;
+  text-align: center;
+
+  &-boxes {
+    .slick-dots li.slick-active button:before {
+      color: $primary-color;
+    }
+
+    .slick-dots li {
+      margin: 0 0.1rem;
+
+      button::before {
+        font-size: 0.9rem;
+        opacity: 1;
+        color: #c7c7c7;
+      }
+    }
+  }
+
+  #{&}-clients {
+    max-width: 30rem;
+    margin: 0 auto;
+
+    &-item {
+      height: 18rem;
+      margin: 0 1.5rem;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &__img-box {
+        position: relative;
+        transition: all 1.5s;
+      }
+
+      &__triangle-img {
+        background-color: $primary-color;
+        border-bottom: 0.01rem solid #ffc0cb;
+        width: 4.3rem;
+        height: 3rem;
+        opacity: 0;
+
+        position: absolute;
+        top: 93%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        transition: all 1.5s;
+      }
+
+      &__img {
+        width: 8rem;
+        height: 8rem;
+        padding: 0.4rem;
+        border-radius: 50%;
+        background-color: $primary-color;
+      }
+
+      &__circle-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        opacity: 0;
+
+        transition: all 1.5s;
+      }
+
+      &__circle {
+        border-radius: 50%;
+        background-color: $primary-color;
+
+        &--big {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+        &--small {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+    }
+  }
+
+  &-text {
+    max-width: 77rem;
+    padding: 4.5rem;
+    margin: 3rem 20rem 3rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 5rem 0 rgba(0, 0, 0, 0.1);
+
+    font-style: italic;
+
+    position: relative;
+
+    &__client {
+      &-name {
+        font: {
+          size: 2.2rem;
+          weight: 800;
+        }
+        margin-bottom: 0.8rem;
+      }
+
+      &-title {
+        font: {
+          size: 1.5rem;
+          weight: 400;
+        }
+        font-family: "Roboto";
+        color: $primary-color;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__description {
+      font-size: 1.8rem;
+    }
+
+    i {
+      font-size: 7rem;
+      color: $primary-color;
+
+      position: absolute;
+      top: 3rem;
+      left: 3rem;
+    }
+  }
+}
+
+.slick-center {
+  .testimonials-clients-item {
+    &__img-box {
+      transform: translateY(-2rem);
+    }
+
+    &__triangle-img {
+      opacity: 1;
+    }
+
+    &__circle-box {
+      opacity: 1;
+      transform: translateY(2rem);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// A simple Sass folder structure
+@import "abstracts/variables";
+
+@import "base/reset";
+@import "base/typography";
+@import "base/general";
+
+@import "layout/header";
+@import "layout/hero-section";
+@import "layout/services-section";
+@import "layout/about-section";
+@import "layout/statistics-section";
+@import "layout/features-section";
+@import "layout/portfolio-section";
+@import "layout/plans-section";
+@import "layout/testimonials-section";
+@import "layout/blogs-section";
+@import "layout/brands-section";
+@import "layout/footer";

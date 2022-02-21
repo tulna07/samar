@@ -1,0 +1,12 @@
+$primary-color: #f55f8d;
+$secondary-color: #f8ae56;
+
+$gradient: linear-gradient(
+    to right,
+    $primary-color,
+    $secondary-color,
+    $primary-color
+  )
+  0% 0% / 200%;
+
+$heading-font-family: "Poppins", sans-serif;

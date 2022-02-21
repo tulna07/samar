@@ -1,0 +1,114 @@
+/** 
+  * Blogs Section 
+  * ============================
+  */
+.blogs {
+  padding-top: 11.5rem;
+  background: url("../../assets/images/bg16.png") top center / cover;
+
+  .section-headings {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &-carousel {
+    cursor: grab;
+  }
+
+  &-item {
+    border-radius: 0.8rem;
+    background-color: rgba(245, 95, 141, 0.1);
+    overflow: hidden;
+
+    &__img {
+      border-bottom: {
+        left-radius: 0.8rem;
+        right-radius: 0.8rem;
+      }
+    }
+  }
+
+  &-content {
+    padding: 3rem 1.5rem 2rem;
+    position: relative;
+
+    &__date {
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 0.6rem;
+
+      font-size: 1.4rem;
+      line-height: 1;
+      color: #fff;
+      text-transform: uppercase;
+
+      position: absolute;
+      transform: translateY(-50%);
+      top: 0;
+      left: 1.5rem;
+    }
+
+    &__title {
+      a:link,
+      a:visited {
+        display: block;
+        margin-bottom: 1rem;
+
+        font: {
+          size: 2.5rem;
+          weight: 700;
+        }
+        line-height: 1.4;
+        color: #262626;
+
+        transition: all 1s;
+      }
+
+      a:hover,
+      a:active {
+        color: #dd3e6e;
+      }
+    }
+
+    &__text {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &-footer {
+    border-top: 0.1rem solid #e1e1f0;
+    padding-top: 2rem;
+
+    font-size: 1.4rem;
+    text-transform: uppercase;
+
+    display: flex;
+    gap: 2rem;
+
+    &-author__icon,
+    &-author__name,
+    &-comments__icon {
+      color: $primary-color;
+    }
+
+    &-author__icon,
+    &-comments__icon {
+      font-size: 1.8rem;
+      margin-right: 0.5rem;
+
+      position: relative;
+      top: 0.1rem;
+    }
+
+    &-comments {
+      a:link,
+      a:visited {
+        color: inherit;
+      }
+
+      &__number {
+        margin-left: 0.8rem;
+      }
+    }
+  }
+}

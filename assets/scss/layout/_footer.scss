@@ -1,0 +1,268 @@
+/** 
+  * Footer
+  * ============================
+  */
+.footer {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+
+  &-form {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: url("../../assets/images/pattern2.png") top / cover;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    &-content {
+      padding: 5rem 6rem;
+      border-radius: 1rem;
+      background: #fff url("../../assets/images/pattern3.png") bottom / cover;
+
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
+
+      &__title {
+        font-size: 2.8rem;
+        text-transform: capitalize;
+      }
+    }
+
+    &-group {
+      display: grid;
+      grid-template-columns: 8.3fr 1.7fr;
+
+      &__email {
+        padding: 1rem 2rem;
+        margin-right: -0.1rem;
+
+        font-size: 1.5rem;
+        line-height: 2.375;
+
+        border: {
+          top-left-radius: 0.8rem;
+          bottom-left-radius: 0.8rem;
+        }
+        border: 0.1rem solid #fff;
+        box-shadow: 0 0 6rem 0 rgba(0, 0, 0, 0.1);
+
+        outline: none;
+
+        &:focus,
+        &:hover {
+          border: 0.1rem solid $primary-color;
+        }
+      }
+
+      &__submit {
+        border: {
+          top-right-radius: 0.8rem;
+          bottom-right-radius: 0.8rem;
+        }
+        border: none;
+        cursor: pointer;
+
+        i {
+          color: #fff;
+          font-size: 2rem;
+        }
+
+        &:hover i {
+          animation: moveButtonIcon 0.3s;
+        }
+      }
+    }
+  }
+
+  &-info {
+    padding: 23rem 0 7rem 0;
+    background: #0e1b1f url("../../assets/images/bg4.png") no-repeat center /
+      contain;
+
+    &-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 2.7rem;
+    }
+  }
+
+  &-contact {
+    &__logo {
+      display: inline-block;
+      margin-bottom: 2.3rem;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      &__icon {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+
+        position: relative;
+
+        &::before {
+          color: #fff;
+
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
+  &-sub-section {
+    &__title {
+      font: {
+        size: 2.4rem;
+        weight: 700;
+      }
+      color: #fff;
+      margin-bottom: 0.6rem;
+    }
+
+    &-underlines {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 3.5rem;
+
+      &__item {
+        border-radius: 1rem;
+        height: 0.4rem;
+
+        &--short {
+          width: 1.5rem;
+        }
+
+        &--long {
+          width: 4.5rem;
+        }
+      }
+    }
+
+    &-list {
+      text-transform: capitalize;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+
+      &__link {
+        color: inherit;
+        line-height: normal;
+        transition: all 0.8s;
+
+        i {
+          margin-right: 0.35rem;
+        }
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &-copyright {
+    padding: 1.2rem 0;
+    background-color: #1f343b;
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-text {
+      &__DexignZone-link:link,
+      &__DexignZone-link:visited {
+        color: $primary-color;
+
+        transition: all 0.5s;
+      }
+
+      &__DexignZone-link:hover,
+      &__DexignZone-link:active {
+        color: #dd3e6e;
+      }
+    }
+
+    &-media {
+      display: flex;
+      gap: 0.8rem;
+
+      &__link {
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+
+        position: relative;
+
+        i {
+          font-size: 1.4rem;
+          color: #fff;
+
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 1;
+          transform: translate(-50%, -50%);
+        }
+
+        &::after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          border-radius: inherit;
+          opacity: 0;
+          background: $gradient;
+
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        &:hover::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@keyframes moveButtonIcon {
+  50% {
+    transform: translateX(1.5rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(-1.5rem);
+  }
+}

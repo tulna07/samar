@@ -1,0 +1,56 @@
+/** 
+  * Services Section 
+  * ============================
+  */
+.statistics {
+  padding: 8rem 0;
+  background: #fffbf7 url("../images/bg14.png") center;
+  text-align: center;
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+  }
+
+  &-item {
+    text-transform: capitalize;
+
+    &__icon {
+      display: block;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &::before {
+        color: #fff;
+        font-size: 4.5rem;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &__data {
+      font: {
+        size: 6.5rem;
+        weight: 800;
+      }
+      color: $primary-color;
+      word-spacing: -0.8rem;
+      line-height: 1;
+    }
+
+    &__title {
+      color: #262626;
+      font-size: 1.8rem;
+    }
+  }
+}

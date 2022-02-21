@@ -1,0 +1,155 @@
+/** 
+  * Plans Section
+  * ============================
+  */
+.plans {
+  padding-top: 11.5rem;
+  background: url("../../assets/images/bg16.png") center / cover no-repeat;
+  text-align: center;
+
+  .section-headings {
+    margin-bottom: 1.6rem;
+  }
+
+  &-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+
+    &-content {
+      width: 24rem;
+      padding: 0.4rem;
+      border-radius: 0.6rem;
+
+      display: flex;
+      justify-content: center;
+
+      font: {
+        size: 1.4rem;
+        weight: 500;
+      }
+      color: #000;
+      text-transform: uppercase;
+    }
+
+    &__item {
+      z-index: 1;
+      width: 50%;
+      padding: 1rem 2rem;
+      border-radius: 0.4rem;
+      color: #fff;
+      cursor: pointer;
+
+      &--active {
+        color: #000;
+        background-color: #fff;
+      }
+    }
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+  }
+
+  &-item {
+    border: 0.3rem solid transparent;
+    border-image: url("../../assets/images/br.png") 100 round;
+    padding: 3.5rem 6rem;
+    background-color: #fff;
+    border-radius: 0.8rem;
+    box-shadow: 0.16rem 0 8rem rgba(0, 0, 0, 0.1);
+
+    transition: border-image 0.3s;
+
+    &:hover {
+      border-image: {
+        slice: 1;
+        repeat: round;
+      }
+    }
+
+    &__title {
+      font: {
+        size: 3.2rem;
+        weight: 700;
+      }
+      margin-bottom: 1.5rem;
+      text-transform: capitalize;
+    }
+
+    &__img {
+      width: 50%;
+      margin-bottom: 1.5rem;
+      vertical-align: middle;
+    }
+  }
+
+  &-price-per-period {
+    margin-bottom: 2.5rem;
+
+    &__price {
+      font: {
+        size: 5rem;
+        weight: 800;
+      }
+      color: #f8ae56;
+      margin-right: -0.4rem;
+    }
+
+    &__period {
+      font: {
+        size: 1.8rem;
+        weight: 600;
+      }
+      color: #262626;
+      text-transform: capitalize;
+    }
+  }
+
+  &-features {
+    padding: 2rem 0;
+    border-top: 0.1rem solid #e1e1f0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &__item {
+      display: flex;
+      gap: 1.4rem;
+
+      i {
+        width: 2.6rem;
+        height: 2.6rem;
+        border-radius: 50%;
+        background-color: #f55f8d29;
+
+        position: relative;
+
+        &::before {
+          color: #f55f8d;
+          font-size: 1.2rem;
+
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      span {
+        font: {
+          size: 1.8rem;
+          weight: 400;
+        }
+        color: #262626;
+      }
+    }
+  }
+
+  .btn {
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.15);
+  }
+}

@@ -1,0 +1,172 @@
+/** 
+  * Portfolio Section 
+  * ============================
+  */
+.portfolio {
+  padding-top: 11.5rem;
+
+  .section-headings {
+    text-align: center;
+  }
+
+  &-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-areas:
+      "item-1 item-1 item-2"
+      "item-3 item-4 item-5"
+      "item-6 item-6 item-5";
+    gap: 3rem;
+  }
+
+  &-item {
+    border-radius: 1rem;
+    overflow: hidden;
+
+    position: relative;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 30%;
+      height: 100%;
+      background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.9),
+        rgba(204, 204, 204, 0.2)
+      );
+
+      transform: skewX(-45deg) translateX(0);
+
+      position: absolute;
+      top: 0;
+      left: -60rem;
+    }
+
+    &--1 {
+      grid-area: item-1;
+    }
+
+    &--2 {
+      grid-area: item-2;
+    }
+
+    &--3 {
+      grid-area: item-3;
+    }
+
+    &--4 {
+      grid-area: item-4;
+    }
+
+    &--5 {
+      grid-area: item-5;
+    }
+
+    &--6 {
+      grid-area: item-6;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      transition: opacity 1s;
+    }
+
+    &__show-btn {
+      display: inline-block;
+      width: 5.2rem;
+      height: 5.2rem;
+      border-radius: 1rem;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      transition: transform 1s;
+
+      i {
+        font-size: 2rem;
+        color: #fff;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &.gradient {
+        transition: 1s;
+      }
+    }
+
+    &-info {
+      position: absolute;
+      bottom: -6.5rem;
+      left: 3rem;
+      text-transform: capitalize;
+
+      transition: transform 0.5s;
+
+      &__title > a {
+        display: inline-block;
+        font: {
+          size: 2.2rem;
+          weight: 800;
+        }
+        color: #fff;
+        margin-bottom: 0.8rem;
+      }
+
+      &__author > a {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+
+    &:hover {
+      &::before {
+        animation: moveImgFlash 0.8s;
+      }
+
+      .portfolio-item {
+        &__overlay {
+          opacity: 1;
+        }
+
+        &__show-btn {
+          transform: translate(-2rem, 2rem);
+        }
+
+        &-info {
+          transition-delay: 0.5s;
+          transform: translateY(-9rem);
+        }
+      }
+    }
+  }
+}
+
+@keyframes moveImgFlash {
+  100% {
+    transform: skewX(-45deg) translateX(160rem);
+  }
+}
+
+// Overwrite lightGallery libs
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:hover {
+  border-color: $primary-color;
+}

@@ -1,0 +1,145 @@
+/** 
+  * General 
+  * ============================
+  */
+html {
+  font-size: 62.5%;
+
+  // Fix fadeInRight and fadeInLeft
+  // (animate.css) cause horizontal scrollbar
+  overflow-x: hidden;
+}
+
+body {
+  color: #636363;
+  font-size: 1.6rem;
+  line-height: 1.6;
+
+  // Scrollbar custom
+  &::-webkit-scrollbar {
+    width: 1rem;
+
+    &-thumb {
+      border-radius: 0.8rem;
+      background-color: $primary-color;
+
+      &:hover {
+        background-color: #dd3e6e;
+      }
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #262626;
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+
+.primary-heading,
+.secondary-heading,
+.subheading {
+  text-transform: capitalize;
+}
+
+.section-headings {
+  margin-bottom: 4rem;
+}
+
+.subheading {
+  font: {
+    size: 2.2rem;
+    weight: 600;
+  }
+  color: $primary-color;
+}
+
+.primary-heading {
+  font: {
+    size: 7rem;
+    weight: 800;
+  }
+  line-height: 1.1;
+}
+
+.secondary-heading {
+  font: {
+    size: 6rem;
+    weight: 800;
+  }
+}
+
+.btn {
+  display: inline-block;
+
+  padding: 2rem 3.5rem;
+  border-radius: 3rem;
+
+  font: {
+    weight: 500;
+    size: 1.5rem;
+  }
+  line-height: 1.2;
+  color: #fff !important;
+  text-transform: uppercase;
+
+  transform: all 0.5s;
+}
+
+.gradient {
+  background: $gradient;
+  transition: all 0.5s;
+
+  &--animate:hover {
+    background-position: right center;
+  }
+}
+
+// Button back to top
+.back-to-top {
+  display: inline-block;
+  padding: 1.8rem;
+  color: #fff;
+  background-color: $primary-color;
+  border-radius: 0.4rem;
+  box-shadow: -0.4rem 0.4rem 2.4rem -1rem $primary-color;
+
+  visibility: hidden;
+  opacity: 0;
+
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.6rem;
+  z-index: 99;
+
+  i {
+    display: block;
+  }
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 1;
+}

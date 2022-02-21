@@ -1,0 +1,99 @@
+/** 
+  * Features Section 
+  * ============================
+  */
+.features {
+  padding: 11.5rem 0 3rem 0;
+  background: url("../../assets/images/bg2.png") center / contain no-repeat;
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &-item {
+    padding: 3rem;
+    width: 88.5%;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 6rem 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+
+    &:nth-child(2) {
+      margin-left: 5rem;
+    }
+
+    &__icon {
+      margin: 0 3rem 1rem 0;
+      color: $primary-color;
+      font-size: 7rem;
+    }
+
+    &-text__title {
+      font: {
+        size: 2.5rem;
+        weight: 800;
+      }
+      margin-bottom: 1rem;
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: $gradient;
+      opacity: 0;
+
+      transition: opacity 1s;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    &:hover {
+      .features-item {
+        &__icon,
+        &-text__title,
+        &-text__description {
+          color: #fff;
+        }
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-img {
+    width: 100%;
+    animation: shakeFeaturesImg 5s infinite;
+  }
+}
+
+@keyframes shakeFeaturesImg {
+  0% {
+    transform: rotate(-1deg);
+  }
+  50% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+} ;

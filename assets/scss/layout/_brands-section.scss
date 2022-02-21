@@ -1,0 +1,69 @@
+/** 
+  * Brands Section 
+  * ============================
+  */
+.brands {
+  padding: 8.5rem 0;
+
+  .owl-stage {
+    padding: 3rem 0;
+    cursor: grab;
+  }
+
+  &-item {
+    height: 10rem;
+    padding: 2rem 3rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+
+    position: relative;
+
+    transition: all 1s;
+
+    &__logo {
+      // Overwrite Owl Carousel
+      width: auto !important;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      &--white {
+        // Overwrite Owl Carousel
+        display: none !important;
+      }
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: $gradient;
+      opacity: 0;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      transition: all 1s;
+    }
+
+    &:hover {
+      box-shadow: 0.5rem 0 3rem 0 rgba(245, 95, 141, 0.5);
+
+      .brands-item__logo--pink {
+        display: none;
+      }
+
+      .brands-item__logo--white {
+        display: block !important;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
