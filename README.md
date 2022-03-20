@@ -23,7 +23,7 @@ A webpage layout built with HTML5, CSS3 and Sass.
 
 ### Phase 2: Responsive design on smaller devices (tablet, mobile, ...)
 
-- [] Make responsive design
+- [ ] Make responsive design
 
 ## Project Structure
 
