@@ -27,33 +27,33 @@ My main tasks in the project are to implement:
 $PROJECT_ROOT
 │   # Resource files
 ├── assets
-│   │   # Image file
+│   │   # Image files
 │   ├── images
-│   │   # Javascript file
+│   │   # JavaScript files
 │   ├── scripts
-│   │   # CSS file
+│   │   # Scss files
+│   ├── scss
+│   │   # CSS files
 │   ├── styles
-│   │   # Third party plugins
+│   │   # Third party libraries/ plugins
 │   └── vendors
 │   # Screenshots of the project
 ├── screenshots
-│   # Roadmap of the project
-├── checklist.xlsx
 │   # Page content
 └── index.html
 ```
 
 ### Installation and Run
 
-Check out the webpage -> [Farmstead](https://scoobytux-farmstead.vercel.app "Farmstead") or run locally:
+Check out the webpage -> [Samar](https://scoobytux-samar.vercel.app/ "Samar") or run locally:
 
-- `git clone https://github.com/scoobytux/farmstead.git`
-- `cd farmstead`
+- `git clone https://github.com/scoobytux/samar.git`
+- `cd samar`
 - Open `index.html` file
 
-## Some Project's Views on Devices
+## Some Project's Views on MacBook/ Laptop
 
-- On MacBook/ Laptop (in Light Theme)
+- On MacBook/ Laptop
 
   ![MacBook/ Laptop view 1](screenshots/laptop-views-1.png)
 
@@ -63,21 +63,10 @@ Check out the webpage -> [Farmstead](https://scoobytux-farmstead.vercel.app "Far
 
   ![MacBook/ Laptop view 4](screenshots/laptop-views-4.png)
 
-- On Mobile (in Dark Theme)
-
-![Mobile view](screenshots/mobile-views.png)
-
-## Contributors
-
-| Name             | Email                     |
-| ---------------- | ------------------------- |
-| Le Nguyen Anh Tu | tu.lna07@gmail.com        |
-| Tran Duc Thanh   | thoatran1112211@gmail.com |
-
 ## Credits and Reference
 
-| Resource                                               | Description          |
-| ------------------------------------------------------ | -------------------- |
-| [https://wp.w3layouts.com/farmstead/][original layout] | The original website |
+| Resource                                                         | Description          |
+| ---------------------------------------------------------------- | -------------------- |
+| [https://samar.dexignzone.com/xhtml/index.html][original layout] | The original website |
 
-[original layout]: https://wp.w3layouts.com/farmstead/
+[original layout]: https://samar.dexignzone.com/xhtml/index.html
