@@ -1,21 +1,25 @@
-# Farmstead Homepage Layout
+# Samar Homepage Layout
 
-See the live page [Farmstead](https://scoobytux-farmstead.vercel.app "Farmstead") 🌳
+See the live page [Samar](https://scoobytux-samar.vercel.app/ "Samar") 🎀
 
 ## Introduction
 
-A webpage layout built with HTML5, CSS3, Bootstrap 4 and vanilla Javascript.
+A webpage layout built with HTML5, CSS3 and Sass.
 
 ## Tasks
 
-> March 4 - 19, 2022
+> Feb 6 - 20, 2022
 
-Our main tasks in the project are to implement:
+My main tasks in the project are to implement:
 
 - [x] Homepage layout
-- [x] Responsive design
-- [x] Full effects
-- [x] Themes: light and dark
+- [x] Full effects with libraries/ plugins:
+  - [animate.css](https://animate.style/ "animate.css") - A cross-browser library of CSS animations
+  - [wow.js](https://wowjs.uk/ "wow.js") - Aa JavaScript library that reveals CSS animation as you scroll down a page
+  - [lightgallery.js](https://www.lightgalleryjs.com/ "lightGallery.js") - A customizable, modular, responsive, lightbox gallery plugin
+  - [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/ "Owl Carousel 2") - Touch enabled jQuery plugin that lets you create a beautiful, responsive carousel slider
+  - [Slick Carousel](http://kenwheeler.github.io/slick/ "Slick Carousel") - A responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more!
+  - [Font Awesome](https://fontawesome.com/ "Font Awesome") - the Internet's icon library and toolkit
 
 Task assignments: check out checklist.xlsx for more details.
 
