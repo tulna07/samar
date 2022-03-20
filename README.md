@@ -55,13 +55,13 @@ Check out the webpage -> [Samar](https://scoobytux-samar.vercel.app/ "Samar") or
 
 - On MacBook/ Laptop
 
-  ![MacBook/ Laptop view 1](screenshots/laptop-views-1.png)
+  ![MacBook/ Laptop view 1](screenshots/laptop_view_1.png)
 
-  ![MacBook/ Laptop view 2](screenshots/laptop-views-2.png)
+  ![MacBook/ Laptop view 2](screenshots/laptop_view_2.png)
 
-  ![MacBook/ Laptop view 3](screenshots/laptop-views-3.png)
+  ![MacBook/ Laptop view 3](screenshots/laptop_view_3.png)
 
-  ![MacBook/ Laptop view 4](screenshots/laptop-views-4.png)
+  ![MacBook/ Laptop view 4](screenshots/laptop_view_4.png)
 
 ## Credits and Reference
 
