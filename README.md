@@ -6,13 +6,13 @@ See the live page [Samar](https://scoobytux-samar.vercel.app/ "Samar") 🎀
 
 A webpage layout built with HTML5, CSS3 and Sass.
 
-## Tasks
+## Tasks and Roadmap
+
+### Phase 1: Desktop-first design and effects
 
 > Feb 6 - 20, 2022
 
-My main tasks in the project are to implement:
-
-- [x] Homepage layout
+- [x] Homepage layout with desktop-first design
 - [x] Full effects with libraries/ plugins:
   - [animate.css](https://animate.style/ "animate.css") - A cross-browser library of CSS animations
   - [wow.js](https://wowjs.uk/ "wow.js") - Aa JavaScript library that reveals CSS animation as you scroll down a page
@@ -20,6 +20,10 @@ My main tasks in the project are to implement:
   - [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/ "Owl Carousel 2") - Touch enabled jQuery plugin that lets you create a beautiful, responsive carousel slider
   - [Slick Carousel](http://kenwheeler.github.io/slick/ "Slick Carousel") - A responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more!
   - [Font Awesome](https://fontawesome.com/ "Font Awesome") - the Internet's icon library and toolkit
+
+### Phase 2: Responsive design on smaller devices (tablet, mobile, ...)
+
+- [] Make responsive design
 
 ## Project Structure
 
