@@ -19,7 +19,7 @@ A webpage layout built with HTML5, CSS3 and Sass.
   - [lightgallery.js](https://www.lightgalleryjs.com/ "lightGallery.js") - A customizable, modular, responsive, lightbox gallery plugin
   - [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/ "Owl Carousel 2") - Touch enabled jQuery plugin that lets you create a beautiful, responsive carousel slider
   - [Slick Carousel](http://kenwheeler.github.io/slick/ "Slick Carousel") - A responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more!
-  - [Font Awesome](https://fontawesome.com/ "Font Awesome") - the Internet's icon library and toolkit
+  - [Font Awesome](https://fontawesome.com/ "Font Awesome") - The Internet's icon library and toolkit
 
 ### Phase 2: Responsive design on smaller devices (tablet, mobile, ...)
 
