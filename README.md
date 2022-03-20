@@ -21,8 +21,6 @@ My main tasks in the project are to implement:
   - [Slick Carousel](http://kenwheeler.github.io/slick/ "Slick Carousel") - A responsive carousel jQuery plugin that supports multiple breakpoints, CSS3 transitions, touch events/swiping & much more!
   - [Font Awesome](https://fontawesome.com/ "Font Awesome") - the Internet's icon library and toolkit
 
-Task assignments: check out checklist.xlsx for more details.
-
 ## Project Structure
 
 ```
