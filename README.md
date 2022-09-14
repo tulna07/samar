@@ -47,7 +47,7 @@ $PROJECT_ROOT
 └── index.html
 ```
 
-### Installation and Run
+## Installation and Run
 
 Check out the webpage -> [Samar](https://scoobytux-samar.vercel.app/ "Samar") or run locally:
 
